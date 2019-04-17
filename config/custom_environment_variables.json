@@ -1,0 +1,5 @@
+{
+    "mailService" : "basicMailService",
+    "mailUser" : "basicMailUser",
+    "mailPassword" : "basicMailPassword"
+}

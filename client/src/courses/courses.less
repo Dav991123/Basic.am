@@ -1,0 +1,181 @@
+#about-programming{
+	color: #fff;
+	text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.1);
+	min-height: 500px;
+	display: grid;
+	justify-content: center;
+	position: relative;
+	align-items: center;
+	overflow: hidden;
+	&:after{
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background: linear-gradient(#22222277 -100%,#222);
+		z-index: 1;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		margin: auto;
+	}
+	video{
+		filter: blur(5px);
+	}
+	h1{
+		font-size: 2em;
+		position: relative;
+		z-index: 2;
+	}
+}
+
+#courses-background{
+	background: #222222 url(images/background.svg) no-repeat center bottom;
+	box-shadow: inset 0px -15px 25px -10px rgba(0, 0, 0, 0.3);
+	z-index: 99;
+	position: relative;
+	top: 0;
+	background-size: cover;
+	padding-bottom: 50px;
+}
+#main-courses, #secondary-courses{
+	grid-template-columns: 1fr 1fr 1fr;
+	display: grid;
+	grid-column-gap: 25px;
+	grid-row-gap: 25px;
+	align-items: flex-start;
+	justify-content: space-between;
+	&#main-courses{
+		padding-bottom: 100px;
+		&>a{
+			&>h1{
+				border-bottom: 5px solid #00000055;
+			}
+		}
+	}
+	&#secondary-courses{
+		padding-top: 0;
+		&>a{
+			&>h1{
+				border-bottom: 5px solid #00000055;
+			}
+		}
+	}
+	&>a{
+		color: inherit;
+		display: block;
+		background-color: #fff;
+		border-radius: 25px;
+		text-align: center;
+		overflow: hidden;
+		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+		transition: 0.15s;
+		position: relative;
+		&:hover{
+			box-shadow: 0px 0px 25px rgba(0,0,0,0.2);
+			transform: scale(1.03);
+		}
+		&:active{
+			box-shadow: 0px 0px 25px rgba(0,0,0,0.3);
+			transform: scale(0.98);
+		}
+		&>h1{
+			padding: 15px;
+			font-size: 1.1em;
+			color: #fff;
+		}
+		&>img{
+			height: 105px;
+			padding: 30px 0;
+			box-sizing: content-box;
+		}
+		&>p{
+			position: absolute;
+			background: #0000008f;
+			width: 100%;
+			height: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: #fff;
+			font-weight: bold;
+			text-shadow: 0px 0px 10px #ffffff80;
+		}
+		&#web{
+			&>h1{
+				background-image: var(--front-end);
+			}
+		}
+		&#java{
+			&>h1{
+				background-image: var(--java);
+			}
+		}
+		&#android{
+			&>h1{
+				background-image: var(--android);
+			}
+		}
+		&#csharp{
+			&>h1{
+				background-image: var(--csharp);
+			}
+		}
+		&#cplusplus{
+			&>h1{
+				background-image: var(--cplusplus);
+			}
+		}
+		&#python{
+			&>h1{
+				background-image: var(--python);
+			}
+		}
+		&#ml{
+			&>h1{
+				background-image: var(--ml);
+			}
+		}
+		&#ios{
+			&>h1{
+				background-image: var(--ios);
+			}
+		}
+		&#programming_basics{
+			&>h1{
+				background-image: var(--programming_basics);
+			}
+		}
+		&#ui_ux{
+			&>h1{
+				background-image: var(--ui_ux);
+			}
+		}
+		&#qa{
+			&>h1{
+				background-image: var(--qa);
+			}
+		}
+		&#seo{
+			&>h1{
+				background-image: var(--seo);
+			}
+		}
+		&#project_management{
+			&>h1{
+				background-image: var(--project_management);
+			}
+		}
+		&#it_english{
+			&>h1{
+				background-image: var(--it_english);
+			}
+		}
+		&#algorithms{
+			&>h1{
+				background-image: var(--algorithms);
+			}
+		}
+	}
+}

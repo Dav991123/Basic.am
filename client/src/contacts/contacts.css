@@ -1,0 +1,181 @@
+#contacts-background {
+  text-align: center;
+}
+#contacts-background > section:first-of-type {
+  display: grid;
+  grid-template-columns: 1fr 0.66fr;
+  grid-column-gap: 70px;
+  align-content: flex-start;
+  justify-items: start;
+  padding-top: 150px;
+  padding-bottom: 70px;
+}
+#contacts-background > section:first-of-type #contact-details {
+  width: 100%;
+  display: grid;
+  align-content: space-between;
+  color: #fff;
+  background: #333;
+  border-radius: 40px;
+  overflow: hidden;
+  box-shadow: 0px 0px 20px #00000022;
+  position: relative;
+}
+#contacts-background > section:first-of-type #contact-details > section:first-of-type {
+  display: grid;
+  grid-row-gap: 40px;
+  padding: 40px 0;
+  grid-template-columns: 1fr 1fr;
+}
+#contacts-background > section:first-of-type #contact-details > section:first-of-type span i {
+  vertical-align: middle;
+  font-size: 130%;
+  margin-right: 5px;
+}
+#contacts-background > section:first-of-type #contact-details > section:first-of-type span a {
+  color: #fff;
+}
+#contacts-background > section:first-of-type #contact-details > section:first-of-type span a:hover {
+  text-decoration: underline;
+}
+#contacts-background > section:first-of-type #contact-details #map {
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+#contacts-background > section:first-of-type #contact-details #map iframe {
+  border: 0;
+  width: 100%;
+  height: 100%;
+}
+#contacts-background > section:first-of-type form {
+  display: grid;
+  width: 100%;
+  grid-row-gap: 10px;
+  background: #333;
+  padding: 40px;
+  border-radius: 40px;
+  transition: 0.1s;
+  box-shadow: 0px 0px 20px #00000022;
+  border: 3px solid transparent;
+}
+#contacts-background > section:first-of-type form:focus-within {
+  border-color: #fff;
+}
+#contacts-background > section:first-of-type form h1 {
+  color: #fff;
+  font-size: 1.25em;
+}
+#contacts-background > section:first-of-type form h1 i {
+  margin-right: 10px;
+  vertical-align: middle;
+  display: inline-block;
+}
+#contacts-background > section:first-of-type form input[type=submit] {
+  border: 2px solid #fff;
+  border-radius: 15px;
+  font-size: 105%;
+  -webkit-appearance: none;
+  padding: 20px;
+  background: transparent;
+  color: #fff;
+  transition: 0.1s;
+  cursor: pointer;
+}
+#contacts-background > section:first-of-type form input[type=submit]:hover {
+  border-color: transparent;
+  background: #fff;
+  color: #222;
+}
+#contacts-background > section:first-of-type form .input {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  width: 100%;
+  vertical-align: top;
+  overflow: hidden;
+}
+#contacts-background > section:first-of-type form .input.filled label {
+  color: #888;
+  transform: translate3d(0, -15px, 0) scale3d(0.75, 0.75, 1);
+}
+#contacts-background > section:first-of-type form .input.filled svg {
+  stroke: #777;
+  transform: translate3d(-66.6%, 0, 0);
+}
+#contacts-background > section:first-of-type form .input input,
+#contacts-background > section:first-of-type form .input textarea {
+  position: relative;
+  display: block;
+  border: none;
+  border-radius: 0;
+  -webkit-appearance: none;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+  padding: 20px 0 10px;
+  width: 100%;
+  background: transparent;
+  color: #fff;
+  font-size: 1.25em;
+  resize: none;
+}
+#contacts-background > section:first-of-type form .input input#input-4,
+#contacts-background > section:first-of-type form .input textarea#input-4 {
+  height: 250px;
+}
+#contacts-background > section:first-of-type form .input input:focus,
+#contacts-background > section:first-of-type form .input textarea:focus,
+#contacts-background > section:first-of-type form .input input.filled,
+#contacts-background > section:first-of-type form .input textarea.filled {
+  outline: none;
+}
+#contacts-background > section:first-of-type form .input input:focus + label,
+#contacts-background > section:first-of-type form .input textarea:focus + label,
+#contacts-background > section:first-of-type form .input input.filled + label,
+#contacts-background > section:first-of-type form .input textarea.filled + label {
+  color: #888;
+  transform: translate3d(0, -15px, 0) scale3d(0.75, 0.75, 1);
+}
+#contacts-background > section:first-of-type form .input input:focus ~ svg,
+#contacts-background > section:first-of-type form .input textarea:focus ~ svg,
+#contacts-background > section:first-of-type form .input input.filled ~ svg,
+#contacts-background > section:first-of-type form .input textarea.filled ~ svg {
+  stroke: #777;
+  transform: translate3d(-66.6%, 0, 0);
+}
+#contacts-background > section:first-of-type form .input label {
+  color: #fff;
+  position: absolute;
+  top: -10px;
+  font-size: 110%;
+  left: 0;
+  display: block;
+  width: 100%;
+  text-align: left;
+  pointer-events: none;
+  transform-origin: 0 0;
+  transition: transform 0.2s 0.15s, color 1s;
+  transition-timing-function: ease-out;
+}
+#contacts-background > section:first-of-type form .input label span {
+  position: relative;
+  display: block;
+  padding: 1.6em 0;
+  width: 100%;
+}
+#contacts-background > section:first-of-type form .input svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  fill: none;
+  stroke: #fff;
+  pointer-events: none;
+  transition: transform 0.7s, stroke 0.7s;
+  transition-timing-function: cubic-bezier(0, 0.25, 0.5, 1);
+}
+/*# sourceMappingURL=contacts.css.map */

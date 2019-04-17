@@ -1,0 +1,35 @@
+{
+  "name": "basic.am",
+  "version": "1.0.0",
+  "description": "cThis project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "start": "node index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client": "cd client && npm start",
+    "server": "nodemon index.js",
+    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/basicitcenter/basic.am.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/basicitcenter/basic.am/issues"
+  },
+  "homepage": "https://github.com/basicitcenter/basic.am#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "concurrently": "^4.1.0",
+    "config": "^3.0.1",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "express-mailer": "^0.3.1",
+    "nodemailer": "^5.1.1",
+    "nodemon": "^1.18.9"
+  },
+  "devDependencies": {
+    "concurrently": "^4.0.1"
+  }
+}

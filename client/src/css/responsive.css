@@ -1,0 +1,267 @@
+@media only screen and (max-width: 1280px) {
+  body {
+    font-size: 90%;
+  }
+  .background > section,
+  .background > header,
+  .background > footer,
+  .background #schema {
+    width: 1024px;
+  }
+  main #main-courses,
+  main #secondary-courses {
+    grid-template-columns: 1fr 1fr;
+  }
+  main #main-courses a:last-of-type {
+    grid-column: 1 / span 2;
+  }
+  main #intro {
+    padding-left: 100px;
+  }
+  main #course-header #course-logo img {
+    height: 110px;
+  }
+  main #course-short-information li:not(:first-of-type) {
+    padding-left: 27px;
+  }
+  main #main-course {
+    grid-template-columns: auto calc(30% - 30px);
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .background > section,
+  .background > header,
+  .background > footer,
+  .background #schema {
+    width: 100%;
+    padding: 0 20px;
+  }
+  #schema {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .background#header-background header {
+    grid-template-columns: 50px 0fr auto;
+  }
+  .background#header-background header .menu {
+    display: inline-block;
+  }
+  .background#header-background header #logo {
+    height: 90px;
+  }
+  .background#header-background header > ul > li:first-of-type,
+  .background#header-background header > ul > li:nth-of-type(2) {
+    display: none;
+  }
+  .background#courses-background {
+    background: #222;
+    padding-bottom: 25px;
+  }
+  .background#course-header-background {
+    padding-top: 90px;
+  }
+  .background#main-course-background {
+    padding-bottom: 20px;
+  }
+  main #main-courses,
+  main #secondary-courses {
+    grid-template-columns: 1fr;
+  }
+  main #main-courses a,
+  main #secondary-courses a {
+    border: 0;
+  }
+  main #main-courses {
+    padding-bottom: 25px;
+  }
+  main #main-courses a:last-of-type {
+    grid-column: 1;
+  }
+  main #course-header {
+    grid-template-columns: auto;
+  }
+  main #course-header > section {
+    text-align: center;
+    padding: 25px 0;
+  }
+  main #course-header #course-logo {
+    height: 110px;
+    margin-top: 40px;
+    grid-row-start: 1;
+    grid-row-end: -1;
+  }
+  main #course-short-information {
+    flex-wrap: wrap;
+    grid-column-end: 1;
+  }
+  main #course-short-information li {
+    border: none;
+    width: 100%;
+    margin: 0 0 20px;
+    padding: 0;
+  }
+  main #course-short-information li:not(:first-of-type) {
+    padding-left: 0px;
+  }
+  main #course-short-information li:last-of-type {
+    margin-bottom: 0;
+  }
+  main #main-course {
+    padding-top: 30px;
+    grid-template-columns: auto;
+  }
+  main #main-course #course-description + img {
+    margin-bottom: 20px;
+  }
+  main #main-course p {
+    text-align: justify;
+  }
+  main #main-course #what-will-learn h3,
+  main #main-course #who-can-attend h3 {
+    text-align: center;
+  }
+  main #main-course #what-will-learn h3:before,
+  main #main-course #who-can-attend h3:before {
+    display: none;
+  }
+  main #main-course .block {
+    margin-bottom: 20px;
+  }
+  main #main-course #phases {
+    margin-bottom: 20px;
+    padding: 0;
+    border: 0;
+    background: transparent;
+  }
+  main #main-course #phases > h3 {
+    text-align: center;
+    margin: 30px 0;
+  }
+  main #main-course #phases .block:last-of-type {
+    margin-bottom: 0;
+  }
+  main #main-course #phases .block label {
+    text-align: center;
+    padding: 20px;
+  }
+  main #main-course #phases .block label:after {
+    display: block;
+    margin: 10px auto auto;
+  }
+  main #main-course aside {
+    margin-top: 20px;
+  }
+  main #main-course aside #interconnected-courses {
+    margin-bottom: 20px;
+  }
+  main #faq-background #faq {
+    grid-template-columns: 1fr;
+    grid-row-gap: 25px;
+  }
+  main #faq-background #faq article {
+    font-size: 110%;
+    padding-left: 100px;
+  }
+  #footer-background footer {
+    grid-template-columns: 100%;
+    justify-content: center;
+    padding: 20px;
+  }
+  #footer-background footer ul#about {
+    border-bottom: 1px dashed #ccc;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+  #footer-background footer ul#apps > li:last-of-type {
+    display: none;
+  }
+  #footer-background footer #subscription fieldset {
+    border-width: 1px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  body {
+    letter-spacing: 0;
+  }
+  .background#header-background header > ul > li#language {
+    margin: 0;
+  }
+  .background#header-background header > ul > li:last-of-type {
+    display: none;
+  }
+  .background footer #subscription fieldset {
+    padding: 15px;
+  }
+  .background footer #subscription fieldset form {
+    flex-wrap: wrap;
+  }
+  .background footer #subscription fieldset form input {
+    width: 100%;
+  }
+  .background footer #subscription fieldset form input[type=email] {
+    border-radius: 15px 15px 0 0;
+    text-align: center;
+  }
+  .background footer #subscription fieldset form input[type=submit] {
+    border-radius: 0 0 15px 15px;
+  }
+  .background footer #subscription fieldset #social {
+    justify-content: space-between;
+  }
+  main {
+    font-size: 90%;
+  }
+  main #intro {
+    text-align: center;
+    padding-left: 0;
+  }
+  main #benefits {
+    padding-bottom: 20px;
+  }
+  main #benefits h1 {
+    display: grid;
+    grid-row-gap: 20px;
+  }
+  main #benefits h1 section {
+    border: 3px solid #2fffa9;
+    border-radius: 25px;
+    min-height: 150px;
+    display: grid;
+    align-items: center;
+    align-content: center;
+  }
+  main #about-programming {
+    padding-top: 70px;
+    min-height: 60vh;
+    display: grid;
+    align-items: center;
+  }
+  main #about-programming h1 span:first-of-type {
+    display: block;
+  }
+  main #main-courses,
+  main #secondary-courses {
+    padding-top: 0;
+  }
+  main #main-courses > a > img,
+  main #secondary-courses > a > img {
+    height: 100px;
+  }
+  main #main-courses > a > h1,
+  main #secondary-courses > a > h1 {
+    font-size: 1.2em;
+  }
+  main #course-header #course-logo img {
+    height: 90px;
+  }
+  main #main-course p {
+    font-size: 1em;
+  }
+  main #course-description + img {
+    display: none;
+  }
+  #copyright {
+    padding: 20px 20px 70px 20px;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */

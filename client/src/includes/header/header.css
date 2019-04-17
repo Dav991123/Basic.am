@@ -1,0 +1,269 @@
+.headroom-wrapper {
+  height: auto!important;
+}
+.headroom {
+  z-index: 999!important;
+  position: fixed!important;
+}
+.background#header-background {
+  width: 100%;
+  z-index: 999;
+  transition: 0.5s all;
+}
+.background#header-background.scrolled {
+  background-color: #1b1b1b;
+  box-shadow: 0 15px 25px -10px rgba(0, 0, 0, 0.2);
+}
+.background#header-background header {
+  display: grid;
+  grid-template-columns: 0fr auto;
+  align-items: center;
+}
+.background#header-background header .menu {
+  display: none;
+  position: relative;
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: 22px;
+  height: 100%;
+  border-radius: 10px;
+}
+.background#header-background header .menu:before {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 10px;
+  letter-spacing: 1px;
+  padding: 5px;
+  border-radius: 10px;
+}
+.background#header-background header .menu.active:before {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+.background#header-background header .menu.active > span {
+  background: transparent;
+}
+.background#header-background header .menu.active > span:after,
+.background#header-background header .menu.active > span:before {
+  top: 0;
+  transition: 0.2s top ease-in-out, transform 0.2s ease-in-out 0.2s;
+  border-radius: 10px;
+}
+.background#header-background header .menu.active > span:after {
+  transform: rotate(45deg);
+}
+.background#header-background header .menu.active > span:before {
+  transform: rotate(-45deg);
+}
+.background#header-background header .menu > span {
+  height: 2px;
+  background: #fff;
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  transition: 0.2s all ease-in-out;
+  border-radius: 10px;
+}
+.background#header-background header .menu > span:after,
+.background#header-background header .menu > span:before {
+  content: "";
+  height: 2px;
+  background: #fff;
+  display: block;
+  width: 100%;
+  position: absolute;
+  transition: 0.2s top ease-in-out 0.2s, transform 0.2s ease-in-out;
+  border-radius: 10px;
+}
+.background#header-background header .menu > span:after {
+  top: -7px;
+}
+.background#header-background header .menu > span:before {
+  top: 7px;
+}
+.background#header-background header #logo {
+  display: flex;
+  align-items: center;
+  height: 100px;
+}
+.background#header-background header #logo img {
+  height: 50%;
+}
+.background#header-background header > ul {
+  color: #fff;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.background#header-background header > ul > li {
+  margin: 0 12px;
+  display: inline-block;
+}
+.background#header-background header > ul > li img {
+  height: 24px;
+  vertical-align: middle;
+}
+.background#header-background header > ul > li a {
+  position: relative;
+  color: #fff;
+  font-size: 105%;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.background#header-background header > ul > li a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: -7px;
+  left: 0;
+  background-color: #fff;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.2s;
+}
+.background#header-background header > ul > li a:hover:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+.background#header-background header > ul > li a.active {
+  border-bottom: 2px solid #fff;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+.background#header-background header > ul > li a.active:hover:before {
+  visibility: hidden;
+  display: none;
+}
+.background#header-background header > ul > li:first-of-type,
+.background#header-background header > ul > li:nth-of-type(2) {
+  border-right: 1px solid white;
+  padding-right: 25px;
+  line-height: 18px;
+}
+.background#header-background header > ul > li#language {
+  position: relative;
+  cursor: pointer;
+  white-space: nowrap;
+  padding: 13px;
+  border-radius: 10px;
+  transition: 0.1s;
+}
+.background#header-background header > ul > li#language span {
+  display: block;
+}
+.background#header-background header > ul > li#language img {
+  margin-right: 5px;
+}
+.background#header-background header > ul > li#language ul {
+  position: absolute;
+  left: 0;
+  visibility: hidden;
+  padding: 0 13px 13px;
+  border-radius: 0 0 10px 10px;
+  top: 0;
+}
+.background#header-background header > ul > li#language ul li {
+  padding-top: 15px;
+}
+.background#header-background header > ul > li#language:hover,
+.background#header-background header > ul > li#language:focus {
+  background: #1b1b1b;
+}
+.background#header-background header > ul > li#language:hover ul,
+.background#header-background header > ul > li#language:focus ul {
+  visibility: visible;
+  background: #1b1b1b;
+  top: 38px;
+  transition: 0.1s;
+}
+.background#header-background header > ul > li#search {
+  position: relative;
+  margin-right: 0;
+}
+.background#header-background header > ul > li#search label {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.background#header-background header > ul > li#search label input {
+  background: transparent;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  transition: 0.2s;
+  width: 0px;
+  padding: 15px;
+  height: 100%;
+  pointer-events: none;
+  color: #fff;
+}
+.background#header-background header > ul > li#search label input.filled,
+.background#header-background header > ul > li#search label input:focus {
+  width: 250px;
+  border-color: #fff;
+  pointer-events: auto;
+  padding: 15px 15px 15px 50px;
+}
+.background#header-background header > ul > li#search label input.filled + img,
+.background#header-background header > ul > li#search label input:focus + img {
+  pointer-events: none;
+  left: 15px;
+}
+.background#header-background header > ul > li#search label input.filled {
+  border-radius: 10px 10px 0px 0px;
+}
+.background#header-background header > ul > li#search label img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  left: 0;
+  cursor: pointer;
+}
+.background#header-background header > ul > li#search label + ul {
+  width: 100%;
+  position: absolute;
+  background: #fff;
+  color: #222;
+  border-radius: 0px 0 10px 10px;
+  display: grid;
+  grid-row-gap: 10px;
+  padding: 15px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+  max-height: 350px;
+  overflow: auto;
+}
+.background#header-background header > ul > li#search label + ul:empty {
+  display: none;
+}
+.background#header-background header > ul > li#search label + ul li:not(:last-of-type) {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+.background#header-background header > ul > li#search label + ul li a {
+  color: #222;
+  text-transform: unset;
+  font-size: 90%;
+}
+.background#header-background header > ul > li#search label + ul li a:hover {
+  text-decoration: underline;
+  font-weight: bold;
+}
+/*# sourceMappingURL=header.css.map */
